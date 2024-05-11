@@ -1,0 +1,22 @@
+.loading {
+  width: 90vw;
+  height: 76vh;
+
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+
+.loading > div {
+  width: 8vmax;
+  height: 8vmax;
+  border-bottom: 3px solid rgb(63, 94, 251);
+  border-radius: 50%;
+  animation: loadingRotate 800ms linear infinite;
+}
+
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
